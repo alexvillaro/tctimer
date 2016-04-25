@@ -145,12 +145,12 @@ window.onload = function() {
 	more.style.textDecoration = "underline";
 	camp.innerHTML = currDates[currCamp].name;
 
-	naeste.style.textDecoration = "underline";
-	forige.style.textDecoration = "underline";
+	naeste.style.visibility = "visible";
+	forige.style.visibility = "visible";		
 	if (currCamp == currDates.length - 1)
-	    naeste.style.textDecoration = "none";
+	    naeste.style.visibility = "hidden";
 	if (currCamp == 0)
-	    forige.style.textDecoration = "none";
+	    forige.style.visibility = "hidden";
 
 	if (currDates[currCamp].grade7)
 	    grade7.style.borderBottom = "1px solid black";
