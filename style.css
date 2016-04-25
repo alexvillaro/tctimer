@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    margin: .5em;
+    display: inline;
+}
+
+#grade7,
+#grade89,
+#eng,
+#dan,
+#mat {
+    float: left;
+}
+
+#github {
+    margin-top: 1em;
+    margin-right: -2em;
+    float: right;
+    width: 2em;
+    height: 2em;
+}
+
+#more {
+    float: right;
+}
+
+#camp {
+    text-align: center;
+    padding-top: 2em;
+}
+
+#countdown {
+    text-align: center;
+    padding-top: .5em;
+}
+
+#forige {
+    float: left;
+}
+
+#naeste {
+    float: right;
+}
+
+@media screen and (max-width: 450px) {
+    a {
+	font-size: .7em;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #container {
+	margin: 0 auto;
+	width: 75%;
+    }
+}
