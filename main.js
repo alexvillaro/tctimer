@@ -8,16 +8,6 @@ var allDates = [
       textDate: Danish date like "Fra 31. jul. 2016 til 5. aug. 2016"
       }*/
     {
-	name: "TalentCamp FooBy",
-	grade7: false,
-	grade89: true,
-	eng: false,
-	dan: false,
-	mat: true,
-	dateFrom: "5/5/2016 10:00 AM",
-	dateTo: "5/10/2016 03:00 AM",
-	textDate: "Fra 5. maj. 2016 til 10. maj. 2016"
-    }, {
 	name: "TalentWeek",
 	grade7: true,
 	grade89: true,
