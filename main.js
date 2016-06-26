@@ -19,6 +19,114 @@ var allDates = [
 	dateFrom: "7/31/2016 10:00 AM",
 	dateTo: "8/5/2016 03:00 AM",
 	textDate: "Fra 31. jul. 2016 til 5. aug. 2016"
+    },
+    {
+	name: "TalentCamp Hjørring (1)",
+	grade7: false,
+	grade8: false,
+	grade9: true,
+	eng: true,
+	dan: false,
+	mat: false,
+	dateFrom: "9/22/2016 10:00 AM",
+	dateTo: "9/26/2016 03:00 AM",
+	textDate: "Fra 22. sep. 2016 til 26. sep. 2016"
+    },
+    {
+	name: "TalentCamp Svenborg",
+	grade7: false,
+	grade8: false,
+	grade9: true,
+	eng: false,
+	dan: true,
+	mat: false,
+	dateFrom: "9/22/2016 10:00 AM",
+	dateTo: "9/26/2016 03:00 AM",
+	textDate: "Fra 22. sep. 2016 til 26. sep. 2016"
+    },
+    { // Invisible
+	name: "Aspirantsamling (1)",
+	grade7: false,
+	grade8: false,
+	grade9: false,
+	eng: false,
+	dan: false,
+	mat: false,
+	dateFrom: "9/23/2016 10:00 AM",
+	dateTo: "9/26/2016 03:00 AM",
+	textDate: "Fra 23. sep. 2016 til 26. sep. 2016"
+    },
+    {
+	name: "TalentCamp Aarhus",
+	grade7: false,
+	grade8: true,
+	grade9: false,
+	eng: true,
+	dan: false,
+	mat: false,
+	dateFrom: "11/10/2016 10:00 AM",
+	dateTo: "11/14/2016 03:00 AM",
+	textDate: "Fra 10. nov. 2016 til 14. nov. 2016"
+    },
+    {
+	name: "TalentCamp Farum",
+	grade7: false,
+	grade8: true,
+	grade9: true,
+	eng: false,
+	dan: false,
+	mat: true,
+	dateFrom: "11/11/2016 10:00 AM",
+	dateTo: "11/15/2016 03:00 AM",
+	textDate: "Fra 11. nov. 2016 til 15. nov. 2016"
+    },
+    {
+	name: "TalentCamp Helsinge",
+	grade7: false,
+	grade8: true,
+	grade9: false,
+	eng: true,
+	dan: false,
+	mat: false,
+	dateFrom: "11/11/2016 10:00 AM",
+	dateTo: "11/15/2016 03:00 AM",
+	textDate: "Fra 11. nov. 2016 til 15. nov. 2016"
+    },
+    {
+	name: "Aspirantsamling (2)",
+	grade7: false,
+	grade8: false,
+	grade9: false,
+	eng: false,
+	dan: false,
+	mat: false,
+	dateFrom: "12/16/2016 10:00 AM",
+	dateTo: "12/19/2016 03:00 AM",
+	textDate: "Fra 16. dec. 2016 til 19. dec. 2016"
+    },
+    {
+	name: "TalentCamp Skanderborg",
+	grade7: true,
+	grade8: false,
+	grade9: false,
+	eng: false,
+	dan: false,
+	mat: true,
+	dateFrom: "12/16/2016 10:00 AM",
+	dateTo: "12/20/2016 03:00 AM",
+	textDate: "Fra 16. dec. 2016 til 20. dec. 2016"
+    },
+    {
+	name: "TalentCamp Hjørring (2)",
+	grade7: true,
+	grade8: false,
+	grade9: false,
+	eng: true,
+	dan: true,
+	mat: false,
+	dateFrom: "12/16/2016 10:00 AM",
+	dateTo: "12/20/2016 03:00 AM",
+	textDate: "Fra 16. dec. 2016 til 20. dec. 2016"
     }
 ];
 
