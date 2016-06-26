@@ -2,7 +2,8 @@ var allDates = [
     /*{
       name: ...,
       grade7: boolean,
-      grade89: boolean,
+      grade8: boolean,
+      grade9: boolean,
       dateFrom: javascript date like "7/31/2016 10:00 AM" (always 10:00 AM),
       dateTo: javascript date like "8/5/2016 03:00 PM" (always 03:00 PM),
       textDate: Danish date like "Fra 31. jul. 2016 til 5. aug. 2016"
@@ -10,7 +11,8 @@ var allDates = [
     {
 	name: "TalentWeek",
 	grade7: true,
-	grade89: true,
+	grade8: true,
+	grade9: true,
 	eng: true,
 	dan: true,
 	mat: true,
@@ -22,7 +24,8 @@ var allDates = [
 
 window.onload = function() {
     var grade7 = document.getElementById("grade7");
-    var grade89 = document.getElementById("grade89");
+    var grade8 = document.getElementById("grade8");
+    var grade9 = document.getElementById("grade9");
     var eng = document.getElementById("eng");
     var dan = document.getElementById("dan");
     var mat = document.getElementById("mat");
@@ -34,7 +37,8 @@ window.onload = function() {
 
     var selected = {
 	grade7: true,
-	grade89: true,
+	grade8: true,
+	grade9: true,
 	eng: true,
 	dan: true,
 	mat: true
@@ -74,14 +78,28 @@ window.onload = function() {
 	updateCamp();
     }
 
-    grade89.onclick = function() {
-	if (selected.grade89) {
-	    selected.grade89 = false;
-	    grade89.innerHTML = "[ ] 8. & 9.";
+    grade8.onclick = function() {
+	if (selected.grade8) {
+	    selected.grade8 = false;
+	    grade8.innerHTML = "[ ] 8.";
 	}
 	else {
-	    selected.grade89 = true;
-	    grade89.innerHTML = "[x] 8. & 9.";	    
+	    selected.grade8 = true;
+	    grade8.innerHTML = "[x] 8.";	    
+	}
+	currCamp = 0;
+	updateDates();
+	updateCamp();
+    }
+
+    grade9.onclick = function() {
+	if (selected.grade9) {
+	    selected.grade9 = false;
+	    grade9.innerHTML = "[ ] 9.";
+	}
+	else {
+	    selected.grade9 = true;
+	    grade9.innerHTML = "[x] 9.";	    
 	}
 	currCamp = 0;
 	updateDates();
@@ -134,7 +152,8 @@ window.onload = function() {
 	if (currDates.length == 0) {
 	    camp.innerHTML = "Ingen camps opfylder dine valg";
 	    grade7.style.borderBottom = "none";
-	    grade89.style.borderBottom = "none";
+	    grade8.style.borderBottom = "none";
+	    grade9.style.borderBottom = "none";
 	    eng.style.borderBottom = "none";
 	    dan.style.borderBottom = "none";
 	    mat.style.borderBottom = "none";
@@ -156,10 +175,14 @@ window.onload = function() {
 	    grade7.style.borderBottom = "1px solid black";
 	else
 	    grade7.style.borderBottom = "none";
-	if (currDates[currCamp].grade89)
-	    grade89.style.borderBottom = "1px solid black";
+	if (currDates[currCamp].grade8)
+	    grade8.style.borderBottom = "1px solid black";
 	else
-	    grade89.style.borderBottom = "none";
+	    grade8.style.borderBottom = "none";
+	if (currDates[currCamp].grade9)
+	    grade9.style.borderBottom = "1px solid black";
+	else
+	    grade9.style.borderBottom = "none";
 	if (currDates[currCamp].eng)
 	    eng.style.borderBottom = "1px solid black";
 	else
@@ -178,10 +201,14 @@ window.onload = function() {
 	currDates = [];
 	for (i = 0; i < allDates.length; i++) {
 	    if (
-		(selected.grade7 && allDates[i].grade7) || (selected.grade89 && allDates[i].grade89)
+		(selected.grade7 && allDates[i].grade7) ||
+		(selected.grade8 && allDates[i].grade8) ||
+		(selected.grade9 && allDates[i].grade9)
 	    ) {
 		if (
-		    (selected.eng && allDates[i].eng) || (selected.dan && allDates[i].dan) || (selected.mat && allDates[i].mat)
+		    (selected.eng && allDates[i].eng) ||
+		    (selected.dan && allDates[i].dan) ||
+		    (selected.mat && allDates[i].mat)
 		) {
 		    if (new Date(allDates[i].dateTo) > new Date())
 			currDates.push(allDates[i]);
