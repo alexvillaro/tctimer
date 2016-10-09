@@ -9,54 +9,6 @@ var allDates = [
       textDate: Danish date like "Fra 31. jul. 2016 til 5. aug. 2016"
       }*/
     {
-	name: "TalentWeek",
-	grade7: true,
-	grade8: true,
-	grade9: true,
-	eng: true,
-	dan: true,
-	mat: true,
-	dateFrom: "7/31/2016 10:00 AM",
-	dateTo: "8/5/2016 03:00 AM",
-	textDate: "Fra 31. jul. 2016 til 5. aug. 2016"
-    },
-    {
-	name: "TalentCamp Hjørring (1)",
-	grade7: false,
-	grade8: false,
-	grade9: true,
-	eng: true,
-	dan: false,
-	mat: false,
-	dateFrom: "9/22/2016 10:00 AM",
-	dateTo: "9/26/2016 03:00 AM",
-	textDate: "Fra 22. sep. 2016 til 26. sep. 2016"
-    },
-    {
-	name: "TalentCamp Svenborg",
-	grade7: false,
-	grade8: false,
-	grade9: true,
-	eng: false,
-	dan: true,
-	mat: false,
-	dateFrom: "9/22/2016 10:00 AM",
-	dateTo: "9/26/2016 03:00 AM",
-	textDate: "Fra 22. sep. 2016 til 26. sep. 2016"
-    },
-    { // Invisible
-	name: "Aspirantsamling (1)",
-	grade7: false,
-	grade8: false,
-	grade9: false,
-	eng: false,
-	dan: false,
-	mat: false,
-	dateFrom: "9/23/2016 10:00 AM",
-	dateTo: "9/26/2016 03:00 AM",
-	textDate: "Fra 23. sep. 2016 til 26. sep. 2016"
-    },
-    {
 	name: "TalentCamp Aarhus",
 	grade7: false,
 	grade8: true,
@@ -127,6 +79,42 @@ var allDates = [
 	dateFrom: "12/16/2016 10:00 AM",
 	dateTo: "12/20/2016 03:00 AM",
 	textDate: "Fra 16. dec. 2016 til 20. dec. 2016"
+    },
+    {
+	name: "TalentCamp Kolding",
+	grade7: false,
+	grade8: false,
+	grade9: true,
+	eng: true,
+	dan: false,
+	mat: false,
+	dateFrom: "1/6/2017 10:00 AM",
+	dateTo: "1/10/2017 03:00 AM",
+	textDate: "Fra 6. jan. 2017 til 10. jan. 2017"
+    },
+    {
+	name: "TalentCamp Farum",
+	grade7: true,
+	grade8: true,
+	grade9: true,
+	eng: false,
+	dan: false,
+	mat: true,
+	dateFrom: "7/23/2017 10:00 AM",
+	dateTo: "7/28/2017 03:00 AM",
+	textDate: "Fra 23. jul. 2017 til 28. jul. 2017"
+    },
+    {
+	name: "TalentCamp Hjørring",
+	grade7: true,
+	grade8: true,
+	grade9: true,
+	eng: true,
+	dan: true,
+	mat: false,
+	dateFrom: "7/30/2017 10:00 AM",
+	dateTo: "8/4/2017 03:00 AM",
+	textDate: "Fra 30. jul. 2017 til 4. aug. 2017"
     }
 ];
 
